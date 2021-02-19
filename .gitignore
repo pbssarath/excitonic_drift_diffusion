@@ -1,0 +1,10 @@
+build
+
+test*
+test*/*
+
+*.plt
+DD
+
+.idea
+cmake-*

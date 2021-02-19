@@ -1,0 +1,71 @@
+ifBoxGrid = True
+#mesh parameters you do the actual simulation.
+# Nelemy is int. range for thsi is 200-800
+# Nelemy is int. range for thsi is 100-400
+Nelemy =500
+Nelemx =12
+#mesh parameters where you store your morphology
+elmnx = 9
+elmny = 99
+#number of dimensions. int
+nsd = 2
+#number of time step. in steady problem it does not matter
+nOfTS = 1
+#if we need domain decomposition. bool
+ifDD = False
+#output format
+outputExtension = ".plt"
+#delta t for transient problem
+dt = 0.001
+#thickness along x direction and y direction
+# Lx and Ly are double. Usually Ly is 1.
+Lx = 0.09
+Ly = 1
+typeOfIC = 1
+# If you want to read from a mesh. put name of your mesh here. String
+inputFilenameGrid = "mesh1.msh"
+# Basis function type. default is linear
+#basisFunction = "quadratic"
+basisFunction = "linear"
+# this shows number of G.PS for calulation. default is zero wich returns
+# 4 G.PS for linear, 9 for quad and 16 for cubic in 2D.
+basisRelativeOrder = 1
+# mobility cofficients. double and small value. mu_n and mu_p usually are 
+# 100 times of mu_x
+mu_n = 1.5e-7
+mu_p = 1.5e-7
+mu_x = 1e-9
+#eps are dielectric constants of materials. double and between 3 and 6
+eps_D = 3.9
+#band gap. double and between 1 and 1.1.
+E_g = 1.1
+# morphology file name. String and name of your input file.
+MSfile = "Bilayer.plt"
+# thickness of interfaical area, in nanometer. Not more than 4 in most cases
+interfaceThk = 1.5
+# thickness of the domain, in meter
+Height = 116e-9
+# Temperature
+T = 300
+#Open circuit voltage. in most cases is less than 0.7
+Voc = 0.06
+# e-h separation distance
+a = 1.8e-9
+# lifetime of exciton. this is around 1e-6
+tau_x = 1e-6
+# clustering number. smaller, more clustered. usually 0.02 is a good choice
+beta = 0.0
+# interfacial potential. double and usually less than 0.1
+potentialFactor = 0.05
+# vapp_step is Applied voltage step for Jv curve
+# This number is desined for FINE calculation. double
+vapp_step = 0.02
+# Ratio of Course calculation to fine calculation. int
+vapp_ratio = 5
+#varListOutput = "[phi, n, p, Jn_y, Jp_y, MS]"
+new_bc = 0
+transport_layer_frac_thickness = 0.08
+#varListOutput = "[phi, n, p, Jn_y, Jp_y,Dis, R MS, DT, D2PHIBAR]"
+isPeriodic = False
+Gx = 1.38e28
+
