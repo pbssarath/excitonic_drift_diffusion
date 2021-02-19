@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4552777.svg)](https://doi.org/10.5281/zenodo.4552777)
+
 This is a framework solving excitonic drift-diffusion equations.
 
 The aim of this code is to solve electron and hole transportation problem in organic solar cell.
